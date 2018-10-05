@@ -1,57 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{A690E4CB-C9F4-4B18-BEE8-1D4041F98BB8}</ProjectGuid>
-    <SccProvider>SAK</SccProvider>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform>x86</Platform>
     <ApplicationIcon>App.ico</ApplicationIcon>
-    <AssemblyKeyContainerName>
-    </AssemblyKeyContainerName>
     <AssemblyName>Atalasoft.Demo.BarcodeReader</AssemblyName>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
-    <DefaultClientScript>JScript</DefaultClientScript>
-    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
-    <DefaultTargetSchema>IE50</DefaultTargetSchema>
     <DelaySign>false</DelaySign>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Atalasoft.Demo.BarcodeReader</RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
-    <StartupObject>
-    </StartupObject>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <OldToolsVersion>3.5</OldToolsVersion>
-    <IsWebBootstrapper>true</IsWebBootstrapper>
-    <SccAuxPath>SAK</SccAuxPath>
-    <PublishUrl>http://localhost/Barcoder/</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Web</InstallFrom>
-    <UpdateEnabled>true</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetFrameworkProfile />
-    <StyleCopTargets>$(SolutionDir)..\..\Build\StyleCop\StyleCop.Targets</StyleCopTargets>
-    <FxCopTargets>$(SolutionDir)..\..\Build\build.fxcop.Targets</FxCopTargets>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -61,8 +26,8 @@
     <FileAlignment>4096</FileAlignment>
     <DebugType>full</DebugType>
     <PlatformTarget>x86</PlatformTarget>
-    <CodeAnalysisRuleAssemblies>C:\Program Files\Microsoft Visual Studio 9.0\Team Tools\Static Analysis Tools\FxCop\Rules</CodeAnalysisRuleAssemblies>
     <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>bin\x86\Release\</OutputPath>
@@ -71,37 +36,30 @@
     <Optimize>true</Optimize>
     <FileAlignment>4096</FileAlignment>
     <PlatformTarget>x86</PlatformTarget>
-    <CodeAnalysisRuleAssemblies>C:\Program Files\Microsoft Visual Studio 9.0\Team Tools\Static Analysis Tools\FxCop\Rules</CodeAnalysisRuleAssemblies>
     <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Atalasoft.dotImage, Version=10.7.0.3644, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
-      <HintPath>..\packages\Atalasoft.dotImage.x86.10.7.0.103644\lib\net40\Atalasoft.dotImage.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Atalasoft.dotImage, Version=11.0.0.507, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+      <HintPath>..\packages\Atalasoft.dotImage.x86.11.0.0.10507\lib\net452\Atalasoft.dotImage.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.dotImage.Barcoding.Reading, Version=10.7.0.3644, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
-      <HintPath>..\packages\Atalasoft.dotImage.Barcoding.Reading.x86.10.7.0.103644\lib\net40\Atalasoft.dotImage.Barcoding.Reading.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Atalasoft.dotImage.Barcoding.Reading, Version=11.0.0.507, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+      <HintPath>..\packages\Atalasoft.dotImage.Barcoding.Reading.x86.11.0.0.10507\lib\net452\Atalasoft.dotImage.Barcoding.Reading.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.dotImage.Lib, Version=10.7.0.3644, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
-      <HintPath>..\packages\Atalasoft.dotImage.Lib.x86.10.7.0.103644\lib\net40\Atalasoft.dotImage.Lib.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Atalasoft.dotImage.Lib, Version=11.0.0.507, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+      <HintPath>..\packages\Atalasoft.dotImage.Lib.x86.11.0.0.10507\lib\net452\Atalasoft.dotImage.Lib.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.dotImage.PdfDoc.Bridge, Version=10.7.0.3644, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
-      <HintPath>..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.10.7.0.103644\lib\net40\Atalasoft.dotImage.PdfDoc.Bridge.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Atalasoft.dotImage.PdfDoc.Bridge, Version=11.0.0.507, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+      <HintPath>..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.11.0.0.10507\lib\net452\Atalasoft.dotImage.PdfDoc.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.dotImage.WinControls, Version=10.7.0.3644, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
-      <HintPath>..\packages\Atalasoft.dotImage.WinControls.x86.10.7.0.103644\lib\net40\Atalasoft.dotImage.WinControls.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Atalasoft.dotImage.WinControls, Version=11.0.0.507, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+      <HintPath>..\packages\Atalasoft.dotImage.WinControls.x86.11.0.0.10507\lib\net452\Atalasoft.dotImage.WinControls.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.PdfDoc, Version=10.7.0.3644, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
-      <HintPath>..\packages\Atalasoft.PdfDoc.x86.10.7.0.103644\lib\net40\Atalasoft.PdfDoc.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Atalasoft.PdfDoc, Version=11.0.0.507, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Atalasoft.PdfDoc.x86.11.0.0.10507\lib\net452\Atalasoft.PdfDoc.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.Shared, Version=10.7.0.3644, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Atalasoft.Shared.10.7.0.103644\lib\net40\Atalasoft.Shared.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Atalasoft.Shared, Version=11.0.0.507, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Atalasoft.Shared.11.0.0.10507\lib\net452\Atalasoft.Shared.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -177,7 +135,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Condition="Exists('$(StyleCopTargets)')" Project="$(StyleCopTargets)" />
@@ -191,22 +154,21 @@
   <Target Name="AfterBuild">
     <Copy SourceFiles="$(AppConfigFile)" DestinationFiles="$(TargetPath).config" SkipUnchangedFiles="false" />
   </Target>
-  <Import Project="..\packages\Atalasoft.dotImage.Lib.x86.10.7.0.73421\build\Atalasoft.dotImage.Lib.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.Lib.x86.10.7.0.73421\build\Atalasoft.dotImage.Lib.x86.targets')" />
-  <Import Project="..\packages\Atalasoft.dotImage.Lib.x86.10.7.0.103644\build\Atalasoft.dotImage.Lib.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.Lib.x86.10.7.0.103644\build\Atalasoft.dotImage.Lib.x86.targets')" />
+  <Import Project="..\packages\Atalasoft.dotImage.Lib.x86.11.0.0.10507\build\Atalasoft.dotImage.Lib.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.Lib.x86.11.0.0.10507\build\Atalasoft.dotImage.Lib.x86.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.Lib.x86.10.7.0.103644\build\Atalasoft.dotImage.Lib.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.Lib.x86.10.7.0.103644\build\Atalasoft.dotImage.Lib.x86.targets'))" />
-    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.x86.10.7.0.103644\build\Atalasoft.dotImage.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.x86.10.7.0.103644\build\Atalasoft.dotImage.x86.targets'))" />
-    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.Barcoding.Reading.x86.10.7.0.103644\build\Atalasoft.dotImage.Barcoding.Reading.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.Barcoding.Reading.x86.10.7.0.103644\build\Atalasoft.dotImage.Barcoding.Reading.x86.targets'))" />
-    <Error Condition="!Exists('..\packages\Atalasoft.PdfDoc.x86.10.7.0.103644\build\Atalasoft.PdfDoc.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.PdfDoc.x86.10.7.0.103644\build\Atalasoft.PdfDoc.x86.targets'))" />
-    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.10.7.0.103644\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.10.7.0.103644\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets'))" />
-    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.WinControls.x86.10.7.0.103644\build\Atalasoft.dotImage.WinControls.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.WinControls.x86.10.7.0.103644\build\Atalasoft.dotImage.WinControls.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.Lib.x86.11.0.0.10507\build\Atalasoft.dotImage.Lib.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.Lib.x86.11.0.0.10507\build\Atalasoft.dotImage.Lib.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.x86.11.0.0.10507\build\Atalasoft.dotImage.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.x86.11.0.0.10507\build\Atalasoft.dotImage.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.Barcoding.Reading.x86.11.0.0.10507\build\Atalasoft.dotImage.Barcoding.Reading.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.Barcoding.Reading.x86.11.0.0.10507\build\Atalasoft.dotImage.Barcoding.Reading.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Atalasoft.PdfDoc.x86.11.0.0.10507\build\Atalasoft.PdfDoc.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.PdfDoc.x86.11.0.0.10507\build\Atalasoft.PdfDoc.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.11.0.0.10507\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.11.0.0.10507\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Atalasoft.dotImage.WinControls.x86.11.0.0.10507\build\Atalasoft.dotImage.WinControls.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Atalasoft.dotImage.WinControls.x86.11.0.0.10507\build\Atalasoft.dotImage.WinControls.x86.targets'))" />
   </Target>
-  <Import Project="..\packages\Atalasoft.dotImage.x86.10.7.0.103644\build\Atalasoft.dotImage.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.x86.10.7.0.103644\build\Atalasoft.dotImage.x86.targets')" />
-  <Import Project="..\packages\Atalasoft.dotImage.Barcoding.Reading.x86.10.7.0.103644\build\Atalasoft.dotImage.Barcoding.Reading.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.Barcoding.Reading.x86.10.7.0.103644\build\Atalasoft.dotImage.Barcoding.Reading.x86.targets')" />
-  <Import Project="..\packages\Atalasoft.PdfDoc.x86.10.7.0.103644\build\Atalasoft.PdfDoc.x86.targets" Condition="Exists('..\packages\Atalasoft.PdfDoc.x86.10.7.0.103644\build\Atalasoft.PdfDoc.x86.targets')" />
-  <Import Project="..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.10.7.0.103644\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.10.7.0.103644\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets')" />
-  <Import Project="..\packages\Atalasoft.dotImage.WinControls.x86.10.7.0.103644\build\Atalasoft.dotImage.WinControls.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.WinControls.x86.10.7.0.103644\build\Atalasoft.dotImage.WinControls.x86.targets')" />
+  <Import Project="..\packages\Atalasoft.dotImage.x86.11.0.0.10507\build\Atalasoft.dotImage.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.x86.11.0.0.10507\build\Atalasoft.dotImage.x86.targets')" />
+  <Import Project="..\packages\Atalasoft.dotImage.Barcoding.Reading.x86.11.0.0.10507\build\Atalasoft.dotImage.Barcoding.Reading.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.Barcoding.Reading.x86.11.0.0.10507\build\Atalasoft.dotImage.Barcoding.Reading.x86.targets')" />
+  <Import Project="..\packages\Atalasoft.PdfDoc.x86.11.0.0.10507\build\Atalasoft.PdfDoc.x86.targets" Condition="Exists('..\packages\Atalasoft.PdfDoc.x86.11.0.0.10507\build\Atalasoft.PdfDoc.x86.targets')" />
+  <Import Project="..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.11.0.0.10507\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.PdfDoc.Bridge.x86.11.0.0.10507\build\Atalasoft.dotImage.PdfDoc.Bridge.x86.targets')" />
+  <Import Project="..\packages\Atalasoft.dotImage.WinControls.x86.11.0.0.10507\build\Atalasoft.dotImage.WinControls.x86.targets" Condition="Exists('..\packages\Atalasoft.dotImage.WinControls.x86.11.0.0.10507\build\Atalasoft.dotImage.WinControls.x86.targets')" />
 </Project>
